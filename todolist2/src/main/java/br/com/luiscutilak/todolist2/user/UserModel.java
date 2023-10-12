@@ -16,7 +16,7 @@ public class UserModel {
     @Id
     @GeneratedValue(generator = "UUID")
     private UUID id;
-    
+
     @Column(unique = true)
     private String username;
     private String name;
@@ -61,7 +61,7 @@ public class UserModel {
         return this.password;
     }
 
-    public void setPassword(String passwword) {
+    public void setPassword(String password) {
         this.password = password;
     }
 }
